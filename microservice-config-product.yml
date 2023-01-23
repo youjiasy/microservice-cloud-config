@@ -27,8 +27,8 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    register-with-eureka: true # 服务注册开关
+    fetch-registry: true # 服务发现开关
     serviceUrl:
       defaultZone: http://eureka6001.com:6001/eureka
   instance:
@@ -59,8 +59,8 @@ spring:
 
 eureka:
   client:
-    registerWithEureka: true
-    fetchRegistry: true
+    register-with-eureka: true # 服务注册开关
+    fetch-registry: true # 服务发现开关
     serviceUrl:
       defaultZone: http://eureka6001.com:6001/eureka
   instance:
