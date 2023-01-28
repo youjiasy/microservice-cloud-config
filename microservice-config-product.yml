@@ -16,7 +16,7 @@ spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource  # 当前数据源操作类型
     driver-class-name: com.mysql.cj.jdbc.Driver   # MySQL驱动包
-    url: jdbc:mysql://127.0.0.1:3306/springcloud_db01?serverTimezone=GMT%2B8  # 数据库名称
+    url: jdbc:mysql://127.0.0.1:33306/springcloud_db01?serverTimezone=GMT%2B8  # 数据库名称
     username: root
     password: 123456
     dbcp2:
@@ -30,7 +30,7 @@ eureka:
     register-with-eureka: true # 服务注册开关
     fetch-registry: true # 服务发现开关
     serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka
+      defaultZone: http://192.168.220.15:6001/eureka
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
@@ -64,7 +64,7 @@ eureka:
     register-with-eureka: true # 服务注册开关
     fetch-registry: true # 服务发现开关
     serviceUrl:
-      defaultZone: http://eureka6001.com:6001/eureka
+      defaultZone: http://192.168.220.15:6001/eureka
   instance:
     instanceId: ${spring.application.name}:${server.port}
     prefer-ip-address: true 
